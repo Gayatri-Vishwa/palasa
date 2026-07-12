@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { HiOutlineBars3 } from "react-icons/hi2";
 import { IoClose } from "react-icons/io5";
 import { Link } from "react-scroll";
+import logo from "../assets/rdLogo.png";
 import { HashLink } from "react-router-hash-link";
 
 const navItems = [
@@ -24,7 +25,7 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-5 lg:px-8">
         <div className="h-24 flex items-center justify-between">
           {/* Logo */}
-          <div>
+          {/* <div>
             <h1 className=" text-2xl md:text-4xl font-bold tracking-[6px] upperCase text-amber-300">
              RADIANT INN
             </h1>
@@ -32,7 +33,46 @@ function Navbar() {
             <p className="  text-[10px] md:text-xs uppercase tracking-[8px] md:tracking-[8px] text-stone-200">
              Hotel & Venues
             </p>
-          </div>
+          </div> */}
+
+<HashLink
+  smooth
+  to="/#home"
+  className="flex items-center gap-3"
+>
+  <img
+    src={logo}
+    alt="Radiant Inn"
+    className="h-10 w-10 object-contain"
+  />
+
+  <div>
+    <h1 className="text-2xl md:text-3xl font-semibold tracking-[4px] text-amber-300">
+      RADIANT INN
+    </h1>
+
+    <p className="text-[10px] md:text-xs uppercase tracking-[6px] text-stone-300">
+      Hotels & Venues
+    </p>
+  </div>
+</HashLink>
+          {/* <HashLink smooth to="/#home" className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="Radiant Inn"
+              className="h-14 md:h-16 w-auto object-contain"
+            />
+
+            <div>
+              <h2 className="text-xl md:text-2xl font-bold text-amber-300">
+                RADIANT INN
+              </h2>
+
+              <p className="text-[10px] tracking-[4px] uppercase text-stone-300">
+                Hotels & Venues
+              </p>
+            </div>
+          </HashLink> */}
 
           {/* Desktop Links */}
           <div className="hidden md:flex items-center gap-14">
@@ -40,10 +80,14 @@ function Navbar() {
               // <a key={item.path} href={item.path} className={navLinkStyle}>
               //   {item.id}
               // </a>
-              <HashLink key={item.path} smooth to={item.path} className={navLinkStyle}>
+              <HashLink
+                key={item.path}
+                smooth
+                to={item.path}
+                className={navLinkStyle}
+              >
                 {item.id}
               </HashLink>
-           
             ))}
           </div>
 
@@ -73,7 +117,7 @@ function Navbar() {
               //   {item.id}
               // </a>
               <HashLink
-              key={item.id}
+                key={item.id}
                 smooth
                 to={item.path}
                 className={navLinkStyle}

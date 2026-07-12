@@ -1,6 +1,8 @@
 import React from "react";
 import { FaInstagram, FaFacebook, FaYoutube,  FaMapMarkerAlt,FaClock, } from "react-icons/fa";
 import { IoCall } from "react-icons/io5";
+import logo from '../assets/rdLogo.png'
+import { HashLink } from "react-router-hash-link";
 
 function Footer() {
 
@@ -24,7 +26,7 @@ function Footer() {
 
 
         {/* Brand */}
-        <div>
+        {/* <div>
 
           <h2 className="
           text-3xl
@@ -33,6 +35,10 @@ function Footer() {
           ">
             RADIANT INN
           </h2>
+
+          
+
+    
 
 
           <p className="
@@ -45,8 +51,37 @@ function Footer() {
           </p>
 
 
-        </div>
+        </div> */}
+{/* Brand */}
+<div>
 
+  <HashLink smooth to="/#home" className="flex items-center gap-3">
+
+    <img
+      src={logo}
+      alt="Radiant Inn"
+      className="h-14 w-auto"
+    />
+
+    <div>
+      <h2 className="text-2xl font-bold tracking-[4px] text-amber-300">
+        RADIANT INN
+      </h2>
+
+      <p className="text-[10px] uppercase tracking-[5px] text-stone-400">
+        Hotels & Venues
+      </p>
+    </div>
+
+  </HashLink>
+
+  <p className="text-stone-400 mt-5 leading-7">
+    Experience luxury, comfort, and warm hospitality at Radient Inn.
+    Whether you're here for a relaxing stay, a family celebration,
+    or a business event, we make every moment memorable.
+  </p>
+
+</div>
 
 
         {/* Quick Links */}
@@ -157,12 +192,13 @@ function Footer() {
       text-stone-500
       ">
 
-        © {new Date().getFullYear()}   RADIENT INN. All Rights Reserved.
+        © {new Date().getFullYear()}   RADIANT INN. All Rights Reserved.
 
       </div>
 
 
     </footer>
+
   );
 }
 
