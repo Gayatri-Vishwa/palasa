@@ -144,6 +144,7 @@ const navigate=useNavigate()
     font-semibold
     hover:bg-amber-400
     transition
+    mt-5
     "
   >
     View Full Gallery
