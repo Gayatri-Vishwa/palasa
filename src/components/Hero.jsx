@@ -94,7 +94,7 @@ function Hero() {
 
       <p className="mt-8 max-w-2xl mx-auto text-base md:text-lg text-stone-300 leading-8">
         Luxury Stay. Exceptional Comfort. Experience elegance and hospitality
-        at Radient Inn.
+        at Radiant Inn.
       </p>
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">
