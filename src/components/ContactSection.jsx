@@ -134,7 +134,7 @@ function ContactSection() {
             </a>
 
             <a
-              href="https://wa.me/917599932543?text=Hello%20Palasa,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant."
+              href="https://wa.me/917599932543?text=Hello%20Radiant Inn,%20I%20would%20like%20to%20know%20more%20about%20your%20restaurant."
               target="_blank"
               rel="noopener noreferrer"
               className="
